@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.chu.agent_menu">
+   <children>
+      <Pane prefHeight="500.0" prefWidth="150.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <Button fx:id="add_patient_button" layoutX="16.0" layoutY="145.0" mnemonicParsing="false" onAction="#add_patient" prefHeight="30.0" prefWidth="120.0" style="-fx-background-color: #0073cf; -fx-background-radius: 15px;" text="Add patient" textAlignment="CENTER" textFill="WHITE" />
+            <Button fx:id="see_patient_button" layoutX="16.0" layoutY="183.0" mnemonicParsing="false" onAction="#see_patient" prefHeight="30.0" prefWidth="120.0" style="-fx-background-color: #0073cf; -fx-background-radius: 15px;" text="See patient" textAlignment="CENTER" textFill="WHITE" />
+            <Button fx:id="add_visite_button" layoutX="15.0" layoutY="220.0" mnemonicParsing="false" onAction="#add_visite" prefHeight="30.0" prefWidth="120.0" style="-fx-background-color: #0073cf; -fx-background-radius: 15px;" text="Add visite" textAlignment="CENTER" textFill="WHITE" />
+            <Button fx:id="see_vistie_button" layoutX="16.0" layoutY="258.0" mnemonicParsing="false" onAction="#see_vistie" prefHeight="30.0" prefWidth="120.0" style="-fx-background-color: #0073cf; -fx-background-radius: 15px;" text="See visites" textAlignment="CENTER" textFill="WHITE" />
+            <Button fx:id="see_operation_button" layoutX="15.0" layoutY="297.0" mnemonicParsing="false" onAction="#see_operation" prefHeight="30.0" prefWidth="120.0" style="-fx-background-color: #0073cf; -fx-background-radius: 15px;" text="See Operations" textAlignment="CENTER" textFill="WHITE" />
+            <Button fx:id="pay_facture_button" layoutX="15.0" layoutY="338.0" mnemonicParsing="false" onAction="#pay_facture" prefHeight="30.0" prefWidth="120.0" style="-fx-background-color: #0073cf; -fx-background-radius: 15px;" text="Pay Facture" textAlignment="CENTER" textFill="WHITE" />
+            <ImageView fitHeight="98.0" fitWidth="196.0" layoutX="15.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../pic/CHU_logo.jpg" />
+               </image>
+            </ImageView>
+            <Button fx:id="Logout_button" layoutX="14.0" layoutY="445.0" mnemonicParsing="false" onAction="#Logout" prefHeight="30.0" prefWidth="120.0" style="-fx-background-color: #0073cf; -fx-background-radius: 15px;" text="Logout" textAlignment="CENTER" textFill="WHITE" />
+            <Button fx:id="home_button" layoutX="15.0" layoutY="105.0" mnemonicParsing="false" onAction="#Home" prefHeight="30.0" prefWidth="120.0" style="-fx-background-color: #0073cf; -fx-background-radius: 15px;" text="Home" textFill="WHITE" />
+         </children>
+      </Pane>
+      <MenuBar layoutX="-4.0" layoutY="-25.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Label fx:id="Ltodayis" layoutX="484.0" layoutY="25.0" />
+   </children>
+</Pane>

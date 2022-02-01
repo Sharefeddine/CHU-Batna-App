@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.chu.see_doctor_con">
+   <children>
+      <fx:include source="admin_menu.fxml" />
+      <TextField fx:id="search" layoutX="222.0" layoutY="48.0" prefHeight="25.0" prefWidth="407.0" promptText="Search Doctors here " />
+      <TableView fx:id="see_doctors_table" layoutX="154.0" layoutY="83.0" prefHeight="415.0" prefWidth="543.0">
+        <columns>
+          <TableColumn fx:id="doctor_id_col" prefWidth="39.0" text="ID" />
+          <TableColumn fx:id="name_col" prefWidth="87.0" text="Name" />
+            <TableColumn fx:id="age_col" prefWidth="51.0" text="Age" />
+            <TableColumn fx:id="adress_col" prefWidth="83.0" text="Adress" />
+            <TableColumn fx:id="service_col" prefWidth="81.0" text="Service" />
+            <TableColumn fx:id="day_col" prefWidth="66.0" text="Day" />
+            <TableColumn fx:id="heur_col" prefWidth="53.0" text="Heur" />
+            <TableColumn fx:id="type_col" prefWidth="82.0" text="Type" />
+        </columns>
+      </TableView>
+   </children>
+</Pane>

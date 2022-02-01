@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.chu.see_visites">
+   <children>
+      <fx:include source="menu_agent.fxml" />
+      <TextField fx:id="search" layoutX="196.0" layoutY="49.0" prefHeight="25.0" prefWidth="340.0" promptText="Search visite" />
+      <TableView fx:id="see_visite_table" layoutX="154.0" layoutY="87.0" prefHeight="311.0" prefWidth="445.0">
+        <columns>
+            <TableColumn fx:id="visite_id_col" prefWidth="60.0" text="ID" />
+          <TableColumn fx:id="patient_col" prefWidth="90.0" text="Patient" />
+            <TableColumn fx:id="type_col" minWidth="0.0" prefWidth="59.0" text="type" />
+            <TableColumn fx:id="service_col" prefWidth="45.0" text="service" />
+            <TableColumn fx:id="doctor_col" prefWidth="69.0" text="Doctor" />
+            <TableColumn fx:id="status_col" prefWidth="64.0" text="Status" />
+        </columns>
+      </TableView>
+   </children>
+</Pane>

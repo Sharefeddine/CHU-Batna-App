@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane fx:id="rootpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.chu.hostablized_patients_controle">
+   <children>
+      <fx:include source="menu_doctor.fxml" />
+      <TextField fx:id="search" layoutX="200.0" layoutY="35.0" prefHeight="25.0" prefWidth="450.0" promptText="Search Patients" />
+      <TableView fx:id="see_hostablized_patients_table" layoutX="155.0" layoutY="90.0" prefHeight="405.0" prefWidth="541.0">
+         <columns>
+            <TableColumn fx:id="visite_id_col" prefWidth="59.0" text="Visite-ID" />
+            <TableColumn fx:id="hostablized_id_col" prefWidth="89.0" text="Hostabiled-ID" />
+            <TableColumn fx:id="patient_col" prefWidth="89.0" text="Patient" />
+            <TableColumn fx:id="Entrey_Date_col" minWidth="0.0" prefWidth="89.0" text="Entrey Date" />
+            <TableColumn fx:id="Exite_Date_col" minWidth="9.0" prefWidth="96.0" text="Exite Day" />
+            <TableColumn fx:id="room_col" prefWidth="47.0" text="Room" />
+            <TableColumn fx:id="patient_status_col" prefWidth="71.0" text="Status" />
+         </columns>
+      </TableView>
+   </children>
+</Pane>

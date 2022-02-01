@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.chu.main_page_doctor">
+   <children>
+      <fx:include source="menu_doctor.fxml" />
+      <Label layoutX="272.0" layoutY="42.0" text="المركز الإستشفائي الجامعي باتنة بن فليس التهامي" />
+      <Label layoutX="272.0" layoutY="67.0" text="University Hospital Center Batna Benflis ElTouhami" textFill="#0073cf" />
+      <Label fx:id="username_label" layoutX="200.0" layoutY="100.0" textFill="#0073cf" />
+      <Label fx:id="hostabiled_patient_total" layoutX="200.0" layoutY="125.0" textFill="#0073cf" />
+      <Label fx:id="waiting_patient_total" layoutX="200.0" layoutY="150.0" textFill="#0073cf" />
+   </children>
+</Pane>

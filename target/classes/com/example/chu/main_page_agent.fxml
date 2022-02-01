@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane fx:id="rootpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.chu.main_page_agent_con">
+   <children>
+      <fx:include source="menu_agent.fxml" />
+      <Label layoutX="183.0" layoutY="109.0" text="Welcome Secreatire" textFill="#0073cf" />
+      <Label fx:id="username_label" layoutX="328.0" layoutY="109.0" />
+      <Label layoutX="181.0" layoutY="142.0" text="Patients's nombre" textFill="#0073cf" />
+      <Label fx:id="patientnombr" layoutX="296.0" layoutY="142.0" prefHeight="17.0" prefWidth="35.0" />
+      <Label layoutX="290.0" layoutY="50.0" prefHeight="17.0" prefWidth="454.0" text="المركز الإستشفائي الجامعي  باتنة بن فليس التهامي" textAlignment="CENTER" />
+      <Label layoutX="290.0" layoutY="74.0" text="University Hospital Center Batna Benflis Tohami" textFill="#0073cf" />
+      <TextField fx:id="search" layoutX="181.0" layoutY="175.0" prefHeight="25.0" prefWidth="500.0" />
+      <TableView fx:id="see_doctors_table" layoutX="152.0" layoutY="206.0" prefHeight="295.0" prefWidth="549.0">
+        <columns>
+          <TableColumn fx:id="doctor_id_col" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="name_col" prefWidth="75.0" text="Name" />
+            <TableColumn fx:id="adress_col" prefWidth="131.0" text="Adress" />
+            <TableColumn fx:id="heur_col" prefWidth="85.0" text="Heur" />
+            <TableColumn fx:id="service_col" prefWidth="108.0" text="Service" />
+            <TableColumn fx:id="type_col" prefWidth="75.0" text="Type" />
+        </columns>
+      </TableView>
+      <Label layoutX="541.0" layoutY="142.0" text="Visite Today" textFill="#0073cf" />
+      <Label fx:id="visitenombre" layoutX="616.0" layoutY="142.0" />
+   </children>
+</Pane>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.chu.Show_Patient">
+   <children>
+      <fx:include source="menu_agent.fxml" />
+      <TextField fx:id="search" layoutX="188.0" layoutY="47.0" prefHeight="25.0" prefWidth="475.0" />
+      <TableView fx:id="see_patient_table" layoutX="149.0" layoutY="82.0" prefHeight="416.0" prefWidth="552.0">
+        <columns>
+          <TableColumn fx:id="patient_id_col" prefWidth="34.0" text="ID" />
+          <TableColumn fx:id="patient_fullname" prefWidth="112.0" text="Full name" />
+            <TableColumn fx:id="patient_mobile_col" prefWidth="71.0" text="Mobile" />
+            <TableColumn fx:id="patient_adress_col" prefWidth="92.0" text="Adress" />
+            <TableColumn fx:id="patient_genre_col" minWidth="8.0" prefWidth="53.0" text="Gendre" />
+            <TableColumn fx:id="patient_age_col" minWidth="0.0" prefWidth="51.0" text="Age" />
+            <TableColumn fx:id="patient_blood_col" minWidth="0.0" prefWidth="45.0" style="background: #0073cf;" text="Blood" />
+            <TableColumn fx:id="patient_sn_col" prefWidth="93.0" text="SN" />
+        </columns>
+      </TableView>
+   </children>
+</Pane>

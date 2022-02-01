@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane fx:id="rootpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.chu.waiting_patient_con">
+   <children>
+      <fx:include source="menu_doctor.fxml" />
+      <TextField fx:id="search" layoutX="179.0" layoutY="44.0" prefHeight="25.0" prefWidth="500.0" />
+      <TableView fx:id="see_visite_table" layoutX="159.0" layoutY="84.0" prefHeight="400.0" prefWidth="540.0">
+        <columns>
+          <TableColumn fx:id="visite_id_col" prefWidth="73.0" text="ID" />
+          <TableColumn fx:id="patient_col" prefWidth="145.0" text="Patient" />
+            <TableColumn fx:id="status_col" prefWidth="157.0" text="Status" />
+            <TableColumn fx:id="type_col" prefWidth="161.0" text="Type" />
+        </columns>
+      </TableView>
+   </children>
+</Pane>

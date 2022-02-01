@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import np.com.ngopal.control.AutoFillTextBox?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.chu.add_visite">
+   <children>
+      <fx:include source="menu_agent.fxml" />
+      <Label layoutX="203.0" layoutY="49.0" text="Patient" />
+      <ComboBox fx:id="type" layoutX="256.0" layoutY="84.0" prefHeight="25.0" prefWidth="149.0" promptText="Select Type" />
+      <Label layoutX="207.0" layoutY="88.0" text="Type" />
+      <Button layoutX="552.0" layoutY="419.0" mnemonicParsing="false" onAction="#add_visite" prefHeight="25.0" prefWidth="92.0" style="-fx-background-color: #0073cf; -fx-background-radius: 15px;" text="Add Visite" textFill="WHITE" />
+      <AutoFillTextBox id="autofill-text" fx:id="patient" filterMode="true" layoutX="256.0" layoutY="47.0" prefHeight="25.0" prefWidth="150.0" stylesheets="@css/main.css" />
+      <ComboBox fx:id="doctor_combox" layoutX="256.0" layoutY="122.0" prefWidth="150.0" promptText="Select Doctor" />
+      <Label layoutX="201.0" layoutY="126.0" text="Doctor" />
+   </children>
+</Pane>

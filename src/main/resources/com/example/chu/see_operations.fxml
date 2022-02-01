@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.chu.see_opeartions_con">
+   <children>
+      <fx:include source="menu_agent.fxml" />
+      <TextField fx:id="search" layoutX="175.0" layoutY="51.0" prefHeight="25.0" prefWidth="500.0" />
+      <TableView fx:id="see_opeartions_table" layoutX="151.0" layoutY="93.0" prefHeight="406.0" prefWidth="547.0">
+        <columns>
+          <TableColumn fx:id="opeartion_id_col" prefWidth="114.0" text="Opera ID" />
+          <TableColumn fx:id="patient_id_col" prefWidth="124.0" text="PatientID" />
+            <TableColumn fx:id="Date_col" prefWidth="128.0" text="Date" />
+            <TableColumn fx:id="heur_col" prefWidth="98.0" text="Heur" />
+            <TableColumn fx:id="salle_col" minWidth="0.0" prefWidth="81.0" text="Salle" />
+        </columns>
+      </TableView>
+   </children>
+</Pane>
